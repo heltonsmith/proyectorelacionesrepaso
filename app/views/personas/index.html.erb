@@ -1,0 +1,22 @@
+
+
+<% @resultado.each do |item| %>
+
+    <h3>Id: <%= item.id %></h3>
+    <h3>Nombre: <%= item.nombre %></h3>
+    
+    <% if item.genero == 0 %>
+        <h3>Genero: F</h3>
+    <% end %>
+
+    <% if item.genero == 1 %>
+        <h3>Genero: M</h3>
+    <% end %>
+
+    <% if item.genero == 2 %>
+        <h3>Genero: O</h3>
+    <% end %>
+
+    <br><hr>
+
+<% end %>
